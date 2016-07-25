@@ -124,15 +124,13 @@ h3 {
 a:link,
 a:visited {
 	text-decoration: none;
-	color: #555;
-	border-bottom: 1px solid transparent;
-	transition: border-bottom 0.2s, color 0.2s
+	color: #e67e22;
+	transition: color 0.2s
 }
 
 a:hover,
 a:active {
-	color: #e67e22;
-	border-bottom: 1px solid #e67e22;
+	color: #555;
 }
 
 /* ------ BUTTONS ------ */
@@ -325,11 +323,6 @@ header {
 
 .works-step:last-of-type {
 	margin-bottom: 80px;
-}
-
-.btn-app:link,
-.btn-app:visited {
-	border: none;
 }
 
 .btn-app img {
