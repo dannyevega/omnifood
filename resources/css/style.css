@@ -105,6 +105,36 @@ h3 {
 	margin-bottom: 10px;
 }
 
+.icon-small {
+	display: inline-block;
+	width: 30px;
+	text-align: center;
+	color: #e67e22;
+	font-size: 120%;
+	margin-right: 10px;
+
+/* good ways to align text and icons */
+	line-height: 120%;
+	vertical-align: middle;
+	margin-top: -4px;
+}
+
+/* ------ LINKS ------ */
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #555;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.2s, color 0.2s
+}
+
+a:hover,
+a:active {
+	color: #e67e22;
+	border-bottom: 1px solid #e67e22;
+}
+
 /* ------ BUTTONS ------ */
 
 .btn:link,
@@ -297,11 +327,34 @@ header {
 	margin-bottom: 80px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+	border: none;
+}
+
 .btn-app img {
 	height: 50px;
 	width: auto;
 	margin-right: 10px;
 }
+
+/* -------------------------------------------- */
+/* SECTION CITIES */
+/* -------------------------------------------- */
+
+
+/* I set the width to 100% because with the grid class span-1-of-4, each column is already 25% of the parent contatiner so this image will be 100% width of that or 25% -- height already adjusts but its good to put auto */
+.box img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.city-features {
+	margin-bottom: 5px;
+}
+
+
 
 
 
