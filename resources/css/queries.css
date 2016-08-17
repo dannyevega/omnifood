@@ -9,6 +9,8 @@
 	.row { padding: 0 2%; }
 }
 
+
+
 /* SMALL TABLET TO BIG TABLET: FROM 768px TO 1023px */
 
 @media only screen and (max-width: 1023px) {
@@ -20,15 +22,20 @@
 		margin-left: 7.5%;
 	}
 
-	.section-steps .row:last-child .steps-box:first-child {
-		text-align: left;
-	}
-
+	.section-steps .row:last-child .steps-box:first-child { text-align: center; }
+	.section-steps .row:last-child .steps-box:last-child { margin-left: -6%; }
 	.steps-box { margin-top: 10px; }
 	.steps-box:last-child { margin-top: 30px; }
-	.works-step { margin-bottom: 40px; }
+	.works-step {
+		margin-bottom: 40px;
+		font-size: 100%;
+	}
+	.works-step div {
+		font-size: 130%;
+		padding-top: 10px;
+	}
 	.works-step:last-of-type { margin-bottom: 60px; }
-	.iphone-screen { width: 50%; }
+	.iphone-screen { width: 54%; }
 
 	.icon-small {
 		width: 10px;
@@ -46,6 +53,8 @@
 
 	.footer-nav li { margin-right: 15px; }
 }
+
+
 
 /* SMALL SCREENS TO SMALL TABLETS: FROM 481px TO 767px */
 
@@ -85,7 +94,12 @@
 	.works-step:last-of-type { margin-bottom: 30px; }
 	.iphone-screen { width: 40%; }
 
-	/*.section-meals { visibility: hidden; }*/
+	footer .row .col { width: 50% }
+	.footer-nav li {
+		display: block;
+		margin-bottom: 4px;
+	}
+	.footer-nav li:last-child { margin-bottom: -12px; }
 }
 
 
@@ -95,6 +109,15 @@
 @media only screen and (max-width: 480px) {
 	section { padding: 25px 0; }
 	.contact-form { width: 100%; }
+
+	.section-steps .row:last-child .steps-box:last-child { margin-left: -2%; }
+
+	.meals-showcase li { width: 50%; }
+	.meals-showcase:first-child { margin-top: 20px; }
+	.meals-showcase:last-of-type { display: none; }
+
+
+	.section-features .row:last-child .col:last-of-type { margin-bottom: 40px; }
 }
 
 
