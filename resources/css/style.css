@@ -131,6 +131,7 @@ a:link,
 a:visited {
 	text-decoration: none;
 	color: #e67e22;
+	-webkit-transition: color 0.2s;
 	transition: color 0.2s
 }
 
@@ -149,6 +150,7 @@ input[type=submit] {
 	font-weight: 300;
 	text-decoration: none;
 	border-radius: 200px;
+	-webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
 	transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -203,6 +205,8 @@ header {
 	width: 1140px;
 	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
@@ -232,6 +236,7 @@ header {
 	text-transform: uppercase;
 	font-size: 90%;
 	border-bottom: 2px solid transparent;
+	-webkit-transition: border-bottom 0.2s;
 	transition: border-bottom 0.2s;
 }
 
