@@ -22,6 +22,7 @@ $(document).ready(function(){
 
 	/* Navigation Scroll */
 	/* This is a good snipped to use to jump from section to section by creating links */
+	/* Will jump to section of page when clicking on link */
 	$(function() {
 	  $('a[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -35,6 +36,31 @@ $(document).ready(function(){
 	      }
 	    }
 	  });
+	});
+
+	/* Animation on scroll */
+	$('.js-first-waypoint').waypoint(function(direction){
+		$('.js-first-waypoint').addClass('animated fadeIn')
+	}, {
+		offset: '50%'
+	});
+
+	$('.js-second-waypoint').waypoint(function(direction){
+		$('.js-second-waypoint').addClass('animated fadeInUp')
+	}, {
+		offset: '50%'
+	});
+
+	$('.js-third-waypoint').waypoint(function(direction){
+		$('.js-third-waypoint').addClass('animated fadeIn')
+	}, {
+		offset: '50%'
+	});
+
+	$('.js-fourth-waypoint').waypoint(function(direction){
+		$('.js-fourth-waypoint').addClass('animated pulse')
+	}, {
+		offset: '50%'
 	});
 
 });

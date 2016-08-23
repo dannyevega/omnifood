@@ -621,3 +621,41 @@ footer p {
 .ion-social-instagram:hover {
 	color: #517fa4;
 }
+
+/* -------------------------------------------- */
+/* ANIMATIONS */
+/* -------------------------------------------- */
+
+.js-first-waypoint,
+.js-second-waypoint,
+.js-third-waypoint {
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js-fourth-waypoint {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js-first-waypoint.animated,
+.js-second-waypoint.animated,
+.js-third-waypoint.animated {
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
