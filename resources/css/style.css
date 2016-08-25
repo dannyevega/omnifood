@@ -195,7 +195,8 @@ input[type=submit]:active {
 /*Chrome and Safari can't render position:fixed for some reason so you need to include -webkit-transform: translateZ(0) AND -webkit-transform: translate3d(0, 0, 0) in order for the nav bar to remain sticky */
 
 header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero-min.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero-min.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -431,7 +432,8 @@ header {
 /* -------------------------------------------- */
 
 .section-testimonials {
-	background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(images/back-customers.jpg);
+	background-image: -webkit-linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(images/back-customers-min.jpg);
+	background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(images/back-customers-min.jpg);
 	background-size: cover;
 	color: #FFF;
 	background-attachment: fixed;
