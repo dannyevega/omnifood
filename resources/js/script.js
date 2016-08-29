@@ -79,4 +79,21 @@ $(document).ready(function(){
 		}
 	});
 
+	/* Maps */
+	var map = new GMaps({
+		div: 'map',
+		lat: 37.8063921,
+		lng: -122.21,
+		zoom: 13
+	});
+
+	map.addMarker({
+		lat: 37.8063921,
+		lng: -122.2758404,
+		title: 'Oakland',
+		infoWindow: {
+			content: '<p>Oakland Home</p>'
+		}
+	});
+
 });
